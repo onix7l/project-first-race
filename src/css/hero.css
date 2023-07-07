@@ -10,7 +10,7 @@
       url(../images/mobile/mobile-hero-bg@2x.jpg);
   }
 } */
-:root {
+/* :root {
     --main-font: 'DM Sans', sans-serif;
     --color-black: #141414;
     --color-dark-green: #a1c487;
@@ -18,7 +18,7 @@
     --color-orange: #fc8a11;
     --color-beige: #faf3e7;
     --color-white: #f3f3f3;
-  }
+  } */
 .hero {
     background-color: var(--color-dark-green);
     padding-top: 48px;
