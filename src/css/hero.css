@@ -22,11 +22,12 @@
 .hero {
     background-color: var(--color-dark-green);
     padding-top: 48px;
+    padding-bottom: 20px;
 }
 
 .hero-container {}
 
-.hero-icon-list {
+.hero-icons-list {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -36,46 +37,81 @@
 
 @media screen and (min-width: 768px) {
     .hero {
-        padding-top: 66px;
+        padding-top: 64px;
     }
 }
 
 @media screen and (min-width: 1280px) {
     .hero {
-        padding-top: 134px;
+        padding-top: 132px;
     }
 }
 
 .hero-list-item {
-    background-color: var;
+    background-color: var(--color-white);
     width: 44px;
     height: 44px;
     border-radius: 40px;
-    position: relative;
+
 }
 
-.hero-icon-img {
+/* .hero-icon-img {
     position: absolute;
-}
+    border-radius: 40px;
+} */
 
 .hero-position-one {
-    z-index: 4;
+    z-index: 0;
+    position: absolute;
+
 }
 
 .hero-position-two {
-    z-index: 3;
+    z-index: 1;
+    position: relative;
+    left: 28px;
 
 }
 
 .hero-position-three {
     z-index: 2;
+    position: relative;
+    left: 14px;
 }
 
 .hero-position-four {
-    z-index: 1;
+    position: relative;
+    z-index: 3;
+
 }
 
 
+.hero-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: baseline;
+    
+}
+
+.hero-item-text {
+    color: var(--color-black);
+    text-align: center;
+    text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.10);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: calc(14 / 14);
+    letter-spacing: -0,04em;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+.hero-item-span {
+    font-size: 8px;
+    font-weight: 400;
+    line-height: calc(10 / 8);
+    text-transform: lowercase;
+}
 
 .hero-title {
     color: #FFF;
@@ -104,8 +140,9 @@
 .hero-btn {
     width: 68px;
     height: 68px;
-
+    position: relative;
     border-radius: 50%;
+    border-color: var(--color-beige);
 }
 
 @media screen and (min-width: 768px) {
@@ -123,14 +160,27 @@
     }
 }
 
-.hero-btn-icon {
-    fill: #FAF3E7;
+
+.hero-btn-link {
+color: var(--color-orange);
+text-align: center;
+text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.10);
+font-size: 14px;
+font-weight: 500;
+line-height: calc(16 / 14);
+letter-spacing: -0.04em;
+text-transform: uppercase;
+position: absolute;
+transform: rotate(335deg);
+top: 16px;
+left: 0;
 
 }
 
-.hero-images-wrapper {}
 
-.hero-images {}
+.hero-image-wrapper {}
+
+.hero-image {}
 
 .hero-photo {}
 
