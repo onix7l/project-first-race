@@ -1,0 +1,134 @@
+/* background-img:
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/mobile/mobile-hero-bg@2x.jpg);
+  }
+} */
+
+.hero {
+background-color: #A1C487;
+}
+.hero-main {
+}
+.hero-list-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 16px;
+   
+}
+@media screen and (min-width: 768px){
+    .hero-list-icon {
+        padding-top: 66px;
+       
+    }
+ }
+    
+ @media screen and (min-width: 1280px){
+    .hero-list-icon {
+        padding-top: 134px;
+        
+    }
+ }
+
+.hero-list-icon-item {
+    background-color: lightgrey;
+    
+    width: 44px;
+    height: 44px;
+    border-radius: 40px;
+    position: relative;
+}
+
+.hero-icon-img {
+    position: absolute;
+}
+.one {
+    z-index: 4;
+}
+.hero-list-icon-two {
+    z-index: 3;
+    
+}
+.three {
+    z-index: 2;
+}
+.four {
+    z-index: 1;
+}
+
+
+
+.hero-name {
+color: #FFF;
+text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.10);
+font-family: var(--main-font);
+font-size: 40px;
+font-style: normal;
+font-weight: 500;
+line-height: calc(44 / 40);
+letter-spacing: -1.6px;
+text-transform: uppercase;
+
+}
+.hero-span {
+    color: #eaf7e5;
+    font-style: italic;
+
+}
+.hero-text {
+color: #FFF;
+text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.10);
+font-family: var(--main-font);
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: calc(18 / 14);
+letter-spacing: -0.56px;
+
+}
+.hero-button {
+    width: 68px;
+    height: 68px;
+    
+border-radius: 50%;}
+
+ @media screen and (min-width: 768px){
+    .hero-button {
+        width: 114px;
+        height: 114px;
+        margin-left: 32px;
+    }
+ }
+    
+ @media screen and (min-width: 1280px){
+    .hero-button {
+        width: 132px;
+        height: 132px;
+    }
+ }
+
+.hero-button-icon {
+    fill: #FAF3E7;
+    
+}
+
+.helo-images-menu {
+}
+.hero-images {
+}
+.hero-foto {
+}
+.hero-back-oval {
+}
+.hero-list-menu {
+}
+.hero-list-item-menu {
+}
