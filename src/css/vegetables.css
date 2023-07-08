@@ -1,60 +1,38 @@
-:root {
-    --main-font: 'DM Sans', sans-serif;
-    --color-black: #141414;
-    --color-dark-green: #a1c487;
-    --color-light-green: #eaf7e5;
-    --color-orange: #fc8a11;
-    --color-beige: #faf3e7;
-    --color-white: #f3f3f3;
-  }
-  
-  body {
-    font-family: var(--main-font);
-  }
-  
-  .container {
-    max-width: 375px;
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 100%;
-    margin: 0 auto;
-  }
-  
-  @media screen and (min-width: 768px) {
-    .container {
-      max-width: 734px;
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-  }
-  
-  @media screen and (min-width: 1280px) {
-    .container {
-      max-width: 1246px;
-    }
-  }
 /**
   |============================
-  | Vegetables styles
+  | Vegetables style
   |============================
-*/  
-.vegetables-section {
+*/
+.vegetables {
 }
-.vegetables-section-title {
+.vegetables-container {
+
 }
-.vegetables-section-text {
+.vegetables-title {
+color: var(--color-black);
+text-align: center;
+text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.10);
+font-size: 24px;
+font-weight: 500;
+line-height: calc(28 / 24);
+letter-spacing: -0,04em;
+text-transform: uppercase;
 }
-.vegetables-card-list {
+
+
+.vegetables-text {
 }
-.vegetables-card-item {
+.vegetables-list {
 }
-.vegetables-card-text {
+.vegetable-list-item {
 }
-.vegetables-section-subtitle {
+.vegetables-item-subtitle {
 }
-.vegetables-card-img {
+.vegetables-item-text {
 }
-.vegetables-price-text {
+.vegetables-item-img {
+}
+.vegetables-item-price {
 }
 .vegetables-btn {
 }
