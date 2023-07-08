@@ -6,7 +6,6 @@
 .vegetables {
 }
 .vegetables-container {
-
 }
 .vegetables-title {
 color: var(--color-black);
@@ -17,7 +16,8 @@ font-weight: 500;
 line-height: calc(28 / 24);
 letter-spacing: -0,04em;
 text-transform: uppercase;
-margin-bottom: 14px;
+margin: 0 auto;
+padding-bottom: 14px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -40,12 +40,13 @@ font-size: 14px;
 font-weight: 400;
 line-height: calc(18 / 14);
 letter-spacing: -0.04em;
-margin-bottom: 40px;
+padding-bottom: 40px;
+margin: 0 auto;
 }
 @media only screen and (min-width: 768px) {
   .vegetables-text {
     max-width: 562px;
-    display: flex;
+  
   }
 }
 .vegetables-list {
