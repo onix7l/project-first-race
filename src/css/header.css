@@ -1,8 +1,7 @@
-
 .header {
   padding-top: 13px;
   padding-bottom: 13px;
-  background-color: #FFF;
+  background-color: #fff;
 }
 .header-container {
   display: flex;
@@ -12,7 +11,6 @@
 .header-navigation {
   display: flex;
   align-items: center;
-
 }
 .header-logo {
   color: #141414;
@@ -23,7 +21,7 @@
   letter-spacing: -0.04em;
   text-transform: uppercase;
   display: flex;
-  align-items: center; 
+  align-items: center;
   gap: 8px;
 }
 .header-list {
@@ -40,7 +38,7 @@
 }
 .header-item-link:hover,
 .header-item-link:focus {
-  color: #77AC63;
+  color: #77ac63;
 }
 .header-menu-open {
   background-color: transparent;
@@ -51,26 +49,15 @@
   display: none;
 }
 
-
 /* ------------------------------MEDIA------------------------------ */
-@media screen and (min-width: 375px) {
-  .container {
-    width: 375px;
-  }
-  }
-
 
 /*-------------------------------TABLET------------------------------*/
 @media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
   .header-list {
     display: flex;
     gap: 14px;
-
   }
-  .header-logo{
+  .header-logo {
     margin-left: 86px;
   }
   .header-menu-open {
@@ -80,14 +67,9 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
-
   }
 }
 
-
 /*---------------------------------DESKTOP---------------------------------*/
 @media screen and (min-width: 1280px) {
-  .container {
-    width: 1280px;
-  }
 }
