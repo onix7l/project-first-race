@@ -1,1 +1,99 @@
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  background-color: #FFF;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-navigation {
+  display: flex;
+  align-items: center;
 
+}
+.header-logo {
+  color: #141414;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: calc(18 / 14);
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center; 
+  gap: 8px;
+}
+.header-list {
+  display: none;
+}
+.header-item-link {
+  color: #141414;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: calc(18 / 14);
+  letter-spacing: -0.04em;
+  display: block;
+}
+.header-item-link:hover,
+.header-item-link:focus {
+  color: #77AC63;
+}
+.header-menu-open {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.header-menu-order {
+  display: none;
+}
+
+
+/* ------------------------------MEDIA------------------------------ */
+@media screen and (min-width: 375px) {
+  .container {
+    width: 375px;
+  }
+  }
+
+
+/*-------------------------------TABLET------------------------------*/
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+  .header-list {
+    display: flex;
+    gap: 14px;
+
+  }
+  .header-logo{
+    margin-left: 86px;
+  }
+  .header-menu-open {
+    display: none;
+  }
+  .header-menu-order {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+  }
+}
+
+
+/*---------------------------------DESKTOP---------------------------------*/
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+  }
+}
