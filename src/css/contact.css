@@ -1,0 +1,169 @@
+.contacts {
+  padding-top: 80px;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-container-text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.contacts-title {
+  color: var(--color-black);
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  padding-bottom: 20px;
+  max-width: 323px;
+}
+
+.contacts-text {
+  color: var(--color-black);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: 0.04em;
+  max-width: 321px;
+  padding-bottom: 40px;
+}
+
+.contact-input {
+  color: #c1bdbd;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: 0.04em;
+  padding-left: 24px;
+  background-color: transparent;
+  border-radius: 100px;
+  border: 1px solid var(--color-black);
+  position: relative;
+  width: 100%;
+  padding-right: 105px;
+  height: 48px;
+}
+
+.contact-form {
+  position: relative;
+  width: 290px;
+}
+
+.contacts-button {
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  background-color: var(--color-orange);
+  border-radius: 100px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+  height: 48px;
+}
+
+.contact-img {
+  width: 335px;
+  height: 388px;
+  background: url(../img/girl.jpg),
+    lightgray 45.603px -18.9px / 86.364% 136.329% no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 40px;
+}
+
+/* -----@media screen 375px-----  */
+@media screen and (min-width: 375px) {
+  .contact-form {
+    width: 335px;
+  }
+}
+
+/* -----@media screen 768px-----  */
+@media screen and (min-width: 768px) {
+  .contacts {
+    padding-top: 100px;
+  }
+
+  .contact-container-text {
+    margin-bottom: 80px;
+  }
+
+  .contacts-title {
+    font-size: 40px;
+    line-height: 1.1;
+    max-width: 524px;
+  }
+
+  .contacts-text {
+    font-size: 18px;
+    line-height: 1.33;
+    max-width: 499px;
+  }
+
+  .contact-container-form {
+    margin-bottom: 80px;
+  }
+
+  .contact-form {
+    width: 350px;
+  }
+
+  .contact-img {
+    width: 704px;
+    height: 463px;
+    background: url(../img/girl-tablet.jpg),
+      lightgray 113.221px -19.102px / 64.865% 137.253% no-repeat;
+    border-radius: 80px;
+  }
+}
+
+/* -----@media screen 1280px------ */
+@media screen and (min-width: 1280px) {
+  .contacts {
+    padding-top: 124px;
+  }
+
+  .contact-container {
+    flex-wrap: nowrap;
+    gap: 77px;
+  }
+
+  .contact-container-text {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .contacts-title {
+    font-size: 48px;
+    line-height: 1.04;
+    text-align: start;
+    padding-bottom: 40px;
+    max-width: 630px;
+  }
+
+  .contacts-text {
+    text-align: start;
+    padding-bottom: 80px;
+    max-width: 614px;
+  }
+
+  .contact-img {
+    width: 525px;
+    height: 536px;
+    background: url(../img/girl-desktop.jpg),
+      lightgray 45.603px -18.9px / 86.364% 136.329% no-repeat;
+  }
+}
