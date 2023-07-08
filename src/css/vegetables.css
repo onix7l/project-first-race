@@ -1,0 +1,62 @@
+:root {
+    --main-font: 'DM Sans', sans-serif;
+    --color-black: #141414;
+    --color-dark-green: #a1c487;
+    --color-light-green: #eaf7e5;
+    --color-orange: #fc8a11;
+    --color-beige: #faf3e7;
+    --color-white: #f3f3f3;
+  }
+  
+  body {
+    font-family: var(--main-font);
+  }
+  
+  .container {
+    max-width: 375px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .container {
+      max-width: 734px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  
+  @media screen and (min-width: 1280px) {
+    .container {
+      max-width: 1246px;
+    }
+  }
+/**
+  |============================
+  | Vegetables styles
+  |============================
+*/  
+.vegetables-section {
+}
+.vegetables-section-title {
+}
+.vegetables-section-text {
+}
+.vegetables-card-list {
+}
+.vegetables-card-item {
+}
+.vegetables-card-text {
+}
+.vegetables-section-subtitle {
+}
+.vegetables-card-img {
+}
+.vegetables-price-text {
+}
+.vegetables-btn {
+}
+.vegetables-svg {
+}
