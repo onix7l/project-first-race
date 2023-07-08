@@ -50,17 +50,9 @@
 }
 
 /* ------------------------------MEDIA------------------------------ */
-@media screen and (min-width: 375px) {
-  .container {
-    width: 375px;
-  }
-}
 
 /*-------------------------------TABLET------------------------------*/
 @media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
   .header-list {
     display: flex;
     gap: 14px;
@@ -80,7 +72,4 @@
 
 /*---------------------------------DESKTOP---------------------------------*/
 @media screen and (min-width: 1280px) {
-  .container {
-    width: 1280px;
-  }
 }
