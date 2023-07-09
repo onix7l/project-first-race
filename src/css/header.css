@@ -55,10 +55,6 @@
   display: none;
 }
 
-.header-logo-img {
-  fill: #77AC63;
-}
-
 @media screen and (min-width: 768px) {
   .header-list {
     display: flex;
@@ -85,5 +81,3 @@
     margin-left: 306px;
   }
 }
-}
-
