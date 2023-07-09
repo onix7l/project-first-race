@@ -4,8 +4,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(-color-dark-green);
-  z-index: 999;
+  background-color: var(--color-dark-green);
+  z-index: 99;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 }
@@ -16,13 +16,13 @@
 }
 
 .mobile-logo-icon {
-  fill: var(-color-dark-green);
+  fill: var(--color-dark-green);
 }
 
 .mobile-logo {
   display: flex;
   gap: 8px;
-  align-items: center;
+  /* align-items: center; */
   color: var(--color-141414);
   font-family: DM Sans;
   font-size: 14px;
@@ -47,7 +47,7 @@
 }
 
 .mobile-close-icon {
-  fill: var(-color-dark-green);
+  fill: var(--color-dark-green);
 }
 
 .mobile-nav {
