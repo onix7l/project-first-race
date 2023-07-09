@@ -43,7 +43,7 @@
   --color-f9f7f4: #f9f7f4;
   --color-c1bdbd: #c1bdbd;
 
-  --shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+  --shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
 
 body {
