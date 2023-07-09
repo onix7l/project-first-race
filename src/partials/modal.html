@@ -14,7 +14,10 @@
         </div>
         <img
           class="modal-list-product-image"
-          srcset="./img/modal/mob-cabbage.webp, ./img/modal/mob-cabbage@2x.webp"
+          srcset="
+            ./img/modal/mob-cabbage.webp    1x,
+            ./img/modal/mob-cabbage@2x.webp 2x
+          "
           src="./img/modal/mob-tomatoes.webp"
           alt="Tomato basket"
           width-="94"
@@ -79,9 +82,9 @@
       autocomplete="off"
       novalidate
     ></form>
-    <div>
+    <div class="modal-field">
       <label for="user-name" class="modal-label">Name</label>
-      <div class="modal-field">
+      <div class="modal-input-wrap">
         <input
           class="modal-input"
           type="text"
@@ -92,9 +95,9 @@
         />
       </div>
     </div>
-    <div>
+    <div class="modal-field">
       <label for="user-mail" class="modal-label">Email</label>
-      <div>
+      <div class="modal-input-wrap">
         <input
           class="modal-input"
           type="email"
@@ -105,9 +108,9 @@
         />
       </div>
     </div>
-    <div>
+    <div class="modal-field">
       <label for="card-number" class="modal-label">Card number</label>
-      <div>
+      <div class="modal-input-wrap">
         <input
           class="modal-input"
           type="cardnumber"
@@ -117,9 +120,9 @@
         />
       </div>
     </div>
-    <div>
+    <div class="modal-field">
       <label for="user-comment" class="modal-label">Comments</label>
-      <div>
+      <div class="modal-input-wrap">
         <textarea
           class="modal-textarea"
           name="user-comment"
@@ -129,6 +132,7 @@
         </textarea>
       </div>
     </div>
+    <div><img class="modal-girl-photo" srcset=""</div>
   </div>
   <button class="modal-submit-button" type="submit">Submit</button>
 </div>
