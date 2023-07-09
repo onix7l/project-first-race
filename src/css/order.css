@@ -102,15 +102,53 @@
     width: 176px;
   }
 }
+
+
+
+
+/*---------------------------------------------------*/
+.order-steps-wrapper {
+  background-image: url(../img/order/mob-order-bg.webp);
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution:2dppx) {
+  .order-steps-wrapper {
+    background-image: url(../img/order/mob-order-bg@2x.webp);
+  }
+}
+
 @media screen and (min-width: 375px) {
   .order-title {
     width: 335px;
   }
 }
 @media screen and (min-width: 768px) {
+  .order-steps-wrapper {
+    background-image: url(../img/order/tab-order-bg.webp);
+  }
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution:2dppx) {
+  .order-steps-wrapper {
+    background-image: url(../img/order/tab-order-bg@2x.webp);
+  }
 }
+
+}
+
 @media screen and (min-width: 1280px) {
+  .order-steps-wrapper {
+    background-image: url(../img/order/desk-order-bg.webp);
+  }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution:2dppx){
+      .order-steps-wrapper {
+        background-image: url(../img/order/desk-order-bg@2x.webp);
+      }
+    }
 }
+
 
 /*
 @media screen and (min-width: 768px){
