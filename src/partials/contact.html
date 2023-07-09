@@ -22,10 +22,33 @@
         />
         <button class="contacts-button" type="submit">Recall</button>
       </form>
-
-      <!-- <button class="contacts-button" type="submit">Recall</button> -->
     </div>
 
-    <div class="contact-img"></div>
+    <div class="contact-img">
+      <picture class="">
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ../img/contact/mob-buyer.webp    1x,
+            ../img/contact/mob-buyer@2x.webp 2x
+          "
+        />
+        <source
+          media="(max-width: 1279px)"
+          srcset="
+            ../img/contact/tab-buyer.webp    1x,
+            ../img/contact/tab-buyer@2x.webp 2x
+          "
+        />
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ../img/contact/desk-buyer.webp    1x,
+            ../img/contact/desk-buyer@2x.webp 2x
+          "
+        />
+        <img src="../img/contact/mob-buyer.webp" alt="buyer" />
+      </picture>
+    </div>
   </div>
 </section>
