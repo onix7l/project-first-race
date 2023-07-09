@@ -1,0 +1,138 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <h2 class="modal-title">Your order</h2>
+    <button class="modal-button">
+      <svg width="6" height="6">
+        <use href="./img/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <ul class="modal-list">
+      <li>
+        <div class="modal-list-product">
+          <h3 class="modal-list-product-title">Cabbage basket</h3>
+          <p class="modal-list-product-text">Plant</p>
+        </div>
+        <img
+          class="modal-list-product-image"
+          srcset="
+            ./img/modal/mob-cabbage.webp    1x,
+            ./img/modal/mob-cabbage@2x.webp 2x
+          "
+          src="./img/modal/mob-tomatoes.webp"
+          alt="Tomato basket"
+          width-="94"
+        />
+        <div>
+          <input
+            type="checkbox"
+            name="user-check"
+            value="true"
+            class="modal-checkbox"
+          />
+          <svg width="10" height="8">
+            <use href="./img/icons.svg#icon-check"></use>
+          </svg>
+        </div>
+      </li>
+      <li>
+        <div class="modal-list-product">
+          <h3 class="modal-list-product-title">Tomato basket</h3>
+          <p class="modal-list-product-text">Plant</p>
+        </div>
+        <img
+          class="modal-list-product-image"
+          srcset="
+            ./img/modal/mob-tomatoes.webp,
+            ./img/modal/mob-tomatoes@2x.webp
+          "
+          src="./img/modal/mob-tomatoes.webp"
+          alt="Tomato basket"
+          width-="94"
+        />
+        <div>
+          <input type="checkbox" name="user-check" value="true" />
+          <svg width="10" height="8">
+            <use href="./img/icons.svg#icon-check"></use>
+          </svg>
+        </div>
+      </li>
+      <li>
+        <div class="modal-list-product">
+          <h3 class="modal-list-product-title">Vegetables basket</h3>
+          <p class="modal-list-product-text">Plant</p>
+          <img
+            class="modal-list-product-image"
+            srcset="./img/modal/mob-basket.webp, ./img/modal/mob-basket@2x.webp"
+            src="./img/modal/mob-basket.webp"
+            alt="Tomato basket"
+            width-="94"
+          />
+          <div>
+            <input type="checkbox" name="user-check" value="true" />
+            <svg width="10" height="8">
+              <use href="./img/icons.svg#icon-check"></use>
+            </svg>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <form
+      class="modal-form"
+      name="feedback_form"
+      autocomplete="off"
+      novalidate
+    ></form>
+    <div class="modal-field">
+      <label for="user-name" class="modal-label">Name</label>
+      <div class="modal-input-wrap">
+        <input
+          class="modal-input"
+          type="text"
+          name="user-name"
+          id="user-name"
+          placeholder="Enter full name..."
+          required
+        />
+      </div>
+    </div>
+    <div class="modal-field">
+      <label for="user-mail" class="modal-label">Email</label>
+      <div class="modal-input-wrap">
+        <input
+          class="modal-input"
+          type="email"
+          name="user-mail"
+          id="user-mail"
+          placeholder="Enter email..."
+          required
+        />
+      </div>
+    </div>
+    <div class="modal-field">
+      <label for="card-number" class="modal-label">Card number</label>
+      <div class="modal-input-wrap">
+        <input
+          class="modal-input"
+          type="cardnumber"
+          name="card-number"
+          id="card-number"
+          placeholder="Enter card..."
+        />
+      </div>
+    </div>
+    <div class="modal-field">
+      <label for="user-comment" class="modal-label">Comments</label>
+      <div class="modal-input-wrap">
+        <textarea
+          class="modal-textarea"
+          name="user-comment"
+          id="user-comment"
+          placeholder="Enter comments..."
+        >
+        </textarea>
+      </div>
+    </div>
+    <div><img class="modal-girl-photo" srcset=""</div>
+  </div>
+  <button class="modal-submit-button" type="submit">Submit</button>
+</div>
