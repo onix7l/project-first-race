@@ -19,8 +19,8 @@
       rel="stylesheet"
     /> -->
     
-    <script type="module" crossorigin src="/project-first-race/assets/index-25d71c2e.js"></script>
-    <link rel="stylesheet" href="/project-first-race/assets/index-6c14581b.css">
+    <script type="module" crossorigin src="/project-first-race/assets/index-d41b9abb.js"></script>
+    <link rel="stylesheet" href="/project-first-race/assets/index-23f76240.css">
   </head>
   <body>
     <!-- Katerina -->
@@ -30,35 +30,35 @@
     <nav class="header-navigation">
       <ul class="header-list">
         <li class="header-list-item">
-          <a class="header-item-link" href="./order.html">How It Works</a>
+          <a class="header-item-link" href="#order">How It Works</a>
         </li>
         <li class="header-list-item">
-          <a class="header-item-link" href="./vegetables.html">Vegetables</a>
+          <a class="header-item-link" href="#vegetables">Vegetables</a>
         </li>
         <li class="header-list-item">
-          <a class="header-item-link" href="./contact.html">Contacts</a>
+          <a class="header-item-link" href="#contact">Contacts</a>
         </li>
       </ul>
 
       <a href="/" class="header-logo">
-        <img src="/project-first-race/" alt="header-logo-image" width="16" height="16" />
+        <svg width="16" height="16">
+          <use href="../img/icons.svg#icon-logo"   class="header-logo-img"></use>
+        </svg>
         Veggieboost
       </a>
     </nav>
 
-    <button type="button" class="header-menu-open">
-      <a href="./mobile-menu.html" >
-        <svg width="24" height="24" class="header-menu-icon">
-          <use href=""></use>
+    <button type="button" class="header-menu-open js-open-menu">
+        <svg width="24" height="24" class="header-menu-icon ">
+          <use href="../img/icons.svg#icon-menu"></use>
         </svg>
-      </a>
+    </button>
 
       <button type="button" class="header-menu-order">
-        <a href="./order.html">
           <svg width="20" height="20" class="header-order-icon">
-            <use href=""></use>
+            <use href="../img/icons.svg#icon-shop-bascket"></use>
           </svg>
-        </a>
+      </button>
   </div>
     
 </section>
@@ -393,11 +393,34 @@
         />
         <button class="contacts-button" type="submit">Recall</button>
       </form>
-
-      <!-- <button class="contacts-button" type="submit">Recall</button> -->
     </div>
 
-    <div class="contact-img"></div>
+    <div class="contact-img">
+      <picture class="">
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ../img/contact/mob-buyer.webp    1x,
+            ../img/contact/mob-buyer@2x.webp 2x
+          "
+        />
+        <source
+          media="(max-width: 1279px)"
+          srcset="
+            ../img/contact/tab-buyer.webp    1x,
+            ../img/contact/tab-buyer@2x.webp 2x
+          "
+        />
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ../img/contact/desk-buyer.webp    1x,
+            ../img/contact/desk-buyer@2x.webp 2x
+          "
+        />
+        <img src="../img/contact/mob-buyer.webp" alt="buyer" />
+      </picture>
+    </div>
   </div>
 </section>
 
