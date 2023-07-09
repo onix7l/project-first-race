@@ -143,6 +143,7 @@ line-height: calc(18 / 14);
 letter-spacing: -0.04em;
 padding-bottom: 20px;
 padding-left: 20px;
+margin-bottom: auto;
 }
 @media only screen and (min-width: 768px) {
   .vegetables-item-price {
@@ -157,9 +158,25 @@ padding-left: 24px;
 width: 114px;
 height: 114px;
 border-radius: 50%;
+border: none;
 background-color: var(--color-orange);
 margin: 0 auto;
 display: block;
 }
+
+.vegetables-btn-text {
+color: var(--color-white);
+text-align: center;
+text-shadow: var(--shadow);
+font-size: 18px;
+font-weight: 500;
+line-height: calc(24 / 18);
+letter-spacing: -0.04em;
+text-transform: uppercase;
+/* transform: rotate(-14deg);
+top: 16px;
+left: 0; */
+}
 .vegetables-svg {
+fill: var(--color-white);
 }
