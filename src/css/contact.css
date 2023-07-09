@@ -1,5 +1,5 @@
 .contacts {
-  padding-top: 80px;
+  padding: 80px 0 80px 0;
 }
 
 .contact-container {
@@ -36,52 +36,72 @@
   padding-bottom: 40px;
 }
 
+.contact-form {
+  position: relative;
+  width: 290px;
+}
+
 .contact-input {
-  color: #c1bdbd;
+  color: var(--color-c1bdbd);
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: 0.04em;
   padding-left: 24px;
   background-color: transparent;
   border-radius: 100px;
-  border: 1px solid var(--color-black);
+  border: 1px solid var(--color-c1bdbd);
   position: relative;
-  width: 100%;
   padding-right: 105px;
   height: 48px;
 }
 
-.contact-form {
-  position: relative;
-  width: 290px;
-}
-
 .contacts-button {
-  color: #fff;
+  color: var(--color-white);
   font-family: DM Sans;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 1.29;
   letter-spacing: 0.04em;
   text-transform: capitalize;
   background-color: var(--color-orange);
   border-radius: 100px;
+  border: 2px solid var(--color-orange);
   position: absolute;
   right: 0;
   top: 0;
-  width: 100px;
-  height: 48px;
+  padding: 15px 35px;
+}
+
+.contact-input:hover,
+.contact-input:focus {
+  border: 1px solid var(--color-dark-green);
+}
+
+.contacts-button:hover,
+.contacts-button:focus {
+  background-color: var(--color-dark-green);
+  border: 2px solid var(--color-dark-green);
 }
 
 .contact-img {
-  width: 335px;
-  height: 388px;
-  background: url(../img/girl.jpg),
-    lightgray 45.603px -18.9px / 86.364% 136.329% no-repeat;
+  width: 320px;
+  height: 341px;
+
+  background: url(../img/contact/AnyConv.com__mob-contact-bg.webp),
+    var(--color-beige);
   background-position: center;
   background-size: cover;
   border-radius: 40px;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .contact-img {
+    background: url(../img/contact/AnyConv.com__mob-contact-bg@2x.webp),
+      var(--color-beige);
+  }
 }
 
 /* -----@media screen 375px-----  */
@@ -94,7 +114,7 @@
 /* -----@media screen 768px-----  */
 @media screen and (min-width: 768px) {
   .contacts {
-    padding-top: 100px;
+    padding-top: 100px 0 173px 0;
   }
 
   .contact-container-text {
@@ -122,18 +142,27 @@
   }
 
   .contact-img {
-    width: 704px;
-    height: 463px;
-    background: url(../img/girl-tablet.jpg),
-      lightgray 113.221px -19.102px / 64.865% 137.253% no-repeat;
+    width: 629px;
+    height: 446px;
+    background: url(../img/contact/AnyConv.com__tab-contact-bg.webp),
+      var(--color-beige);
     border-radius: 80px;
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .contact-img {
+    background: url(../img/contact/AnyConv.com__tab-contact-bg@2x.webp),
+      var(--color-beige);
   }
 }
 
 /* -----@media screen 1280px------ */
 @media screen and (min-width: 1280px) {
   .contacts {
-    padding-top: 124px;
+    padding-top: 124px 0 124px 0;
   }
 
   .contact-container {
@@ -162,8 +191,17 @@
 
   .contact-img {
     width: 525px;
-    height: 536px;
-    background: url(../img/girl-desktop.jpg),
-      lightgray 45.603px -18.9px / 86.364% 136.329% no-repeat;
+    height: 499px;
+    background: url(../img/contact/AnyConv.com__desk-contact-bg.webp),
+      var(--color-beige);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .contact-img {
+      background: url(../img/contact/AnyConv.com__desk-contact-bg@2x.webp),
+        var(--color-beige);
+    }
   }
 }
