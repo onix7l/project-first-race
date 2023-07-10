@@ -1,5 +1,9 @@
 
 @media screen and (min-width: 320px) {
+.order-picture-broccoli{
+display: block;
+padding-right: 0;}
+
   .order-steps-list-item:before {
     content: counter(num);
     counter-increment: num;
@@ -22,9 +26,16 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-
-
   }
+    .order-steps-list-item:first-child::before {
+      top: 5px;
+    }
+.order-steps-list-item:nth-child(2)::before{
+  top: -2px;
+}
+    .order-steps-list-item:last-child::before{
+      top:7px;
+    }
 
   .order-point {
     width: 5.025px;
@@ -42,13 +53,14 @@
 
   .order-title {
     color: var(--color-black);
-    text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.10);
+    text-shadow: var(--shadow);
     font-size: 28px;
     font-weight: 500;
     line-height: 1.14;
-    letter-spacing: -0, 04em;
+    letter-spacing: -0,04em;
     text-transform: uppercase;
     padding-bottom: 20px;
+  
   }
 
   .order-photo {
@@ -56,8 +68,7 @@
   }
 
   .order-img {
-    width: 280px;
-
+    width: auto;
     border-radius: 100px;
     background: lightgray 50% / cover no-repeat;
   }
@@ -108,7 +119,7 @@
     justify-content: center;
     flex-shrink: 0;
     color: var(--color-black);
-    text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.10);
+    text-shadow: var(--shadow);
     font-size: 24px;
     font-weight: 500;
     line-height: 1.17;
@@ -161,10 +172,21 @@
 
 
   }
+  .order-list-description{
+
+  width: 335px;
+  color: var(--color-black);
+  text-shadow: var(--shadow);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: -0.04em;
+
+  }
 
   .order-content {
     color: var(--color-black);
-    text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.10);
+    text-shadow: var(--shadow);
     font-size: 14px;
     font-weight: 400;
     line-height: 1.23;
@@ -251,7 +273,7 @@
     width: 317px;
     height: 96px;
     color: var(--color-black);
-    text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.10);
+    text-shadow: var(--shadow);
     font-size: 18px;
     font-weight: 400;
     line-height: 1.33;
@@ -272,6 +294,13 @@
     padding-top: 0px;
   }
 
+  .order-list-description {
+      width: 317px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.33;
+      letter-spacing: -0.04em;
+  }
   .order-steps-wrapper {
     margin-top: 100px;
     width: 704px;
@@ -293,7 +322,7 @@
   .order-subtitle {
     width: 274px;
     color: var(--color-black);
-    text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.10);
+    text-shadow: var(--shadow);
     font-size: 28px;
     font-weight: 500;
     line-height: 1.14;
@@ -394,7 +423,7 @@
 
   .order-subtitle {
     width: 512px;
-    text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.10);
+    text-shadow: var(--shadow);
     font-size: 40px;
     font-weight: 500;
     line-height: 1.1;
@@ -409,7 +438,7 @@
     width: 1216px;
     margin-top: 124px;
     border-radius: 80px;
-    background: #FAF3E7;
+    background: var(--color-beige);
     background-image: url(../img/order/desk-order-bg.webp);
   }
     @media (min-device-pixel-ratio: 2),
