@@ -156,7 +156,9 @@
       novalidate
     ></form>
     <div class="modal-field">
-      <label for="user-name" class="modal-label">Name</label>
+      <label for="user-name" class="modal-label modal-visually-hidden"
+        >Name</label
+      >
       <div class="modal-input-wrap">
         <input
           class="modal-input"
@@ -170,7 +172,9 @@
       </div>
     </div>
     <div class="modal-field">
-      <label for="user-mail" class="modal-label">Email</label>
+      <label for="user-mail" class="modal-label modal-visually-hidden"
+        >Email</label
+      >
       <div class="modal-input-wrap">
         <input
           class="modal-input"
@@ -184,7 +188,9 @@
       </div>
     </div>
     <div class="modal-field">
-      <label for="card-number" class="modal-label">Card number</label>
+      <label for="card-number" class="modal-label modal-visually-hidden"
+        >Card number</label
+      >
       <div class="modal-input-wrap">
         <input
           class="modal-input"
@@ -198,7 +204,9 @@
       </div>
     </div>
     <div class="modal-field">
-      <label for="user-comment" class="modal-label">Comments</label>
+      <label for="user-comment" class="modal-label modal-visually-hidden"
+        >Comments</label
+      >
       <div class="modal-input-wrap">
         <textarea
           class="modal-textarea"
@@ -209,7 +217,27 @@
         </textarea>
       </div>
     </div>
-    <div><img class="modal-girl-photo" srcset="" /></div>
+    <div class="modal-person-image-container">
+      <picture class="modal-person-image">
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./img/modal/desk-person.webp    1x,
+            ./img/modal/desk-person@2x.webp 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="./img/modal/tab-desk.webp 1x, ./img/modal/tab-desk@2x.webp 2x"
+        />
+        <img
+          src="./img/modal/desk-person.webp"
+          alt="cabbage basket"
+          width="444"
+          height="413"
+        />
+      </picture>
+    </div>
   </div>
   <button class="modal-submit-button" type="submit">Submit</button>
 </div>
