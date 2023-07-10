@@ -19,8 +19,8 @@
       rel="stylesheet"
     /> -->
     
-    <script type="module" crossorigin src="/project-first-race/assets/index-8a7e673d.js"></script>
-    <link rel="stylesheet" href="/project-first-race/assets/index-4ecde8df.css">
+    <script type="module" crossorigin src="/project-first-race/assets/index-68d63935.js"></script>
+    <link rel="stylesheet" href="/project-first-race/assets/index-041b7d1c.css">
   </head>
   <body>
     <!-- Katerina -->
@@ -88,15 +88,15 @@
         <a class="mobile-nav-link" href="#contact">Contacts</a>
       </li>
       <li class="mobile-nav-item">
-        <button type="button" class="mobile-nav-btn">
+        <!-- <button type="button" class="mobile-nav-btn data-modal-open-2">
           <svg class="mobile-nav-icon" width="20" height="20">
-            <use href="/project-first-race/assets/icons-04402a93.svg#icon-shop-bascket"></use>
+            <use href="./img/icons.svg#icon-shop-bascket"></use>
           </svg>
-        </button>
-        <!-- <a href="#modal">
-            <svg class="mobile-nav-icon" width="20" height="20">
-            <use href="./images/icons.svg#icon-shop-bascket"></use>
-        </svg></a> -->
+        </button> -->
+        <a href="#modal" class="data-modal-open-2">
+          <svg class="mobile-nav-icon" width="20" height="20">
+            <use href="/project-first-race/assets/icons-04402a93.svg#icon-shop-bascket"></use></svg
+        ></a>
       </li>
     </ul>
   </nav>
@@ -884,7 +884,7 @@
         <p class="vegetables-item-price">90 UAH / kg</p>
       </li>
     </ul>
-    <button class="vegetables-btn js-open-menu" type="button">
+    <button class="vegetables-btn data-modal-open" type="button">
       <span class="vegetables-text-rotate">
         <svg class="vegetables-svg" width="14" height="14">
           <use href="/project-first-race/assets/icons-04402a93.svg#icon-arrow"></use>
@@ -1095,7 +1095,7 @@
 </footer>
 
     <!-- DmytroP -->
-    <div class="modal-backdrop modal-is-hidden data-modal">
+    <div class="modal-backdrop modal-is-hidden data-modal" id="modal">
   <div class="modal">
     <h2 class="modal-title">Your order</h2>
     <button class="modal-button data-modal-close">
@@ -1103,7 +1103,7 @@
         <use href="/project-first-race/assets/icons-04402a93.svg#icon-close"></use>
       </svg>
     </button>
-    <ul class="modal-list">
+    <!-- <ul class="modal-list">
       <li>
         <h3 class="modal-list-product-title">Cabbage basket</h3>
         <p class="modal-list-product-text">Plant</p>
@@ -1115,26 +1115,35 @@
             class="modal-checkbox modal-visually-hidden"
           />
           <svg width="10" height="8">
-            <use href="/project-first-race/assets/icons-04402a93.svg#icon-check"></use>
+            <use href="./img/icons.svg#icon-check"></use>
           </svg>
         </div>
         <div class="modal-list-product">
           <picture>
             <source
               media="(min-width: 1280px)"
-              srcset="/project-first-race/assets/desk-cabbage-ae55d107.webp 1x, /project-first-race/assets/desk-cabbage@2x-ffa7e613.webp 2x"
+              srcset="
+                ./img/modal/desk-cabbage.webp    1x,
+                ./img/modal/desk-cabbage@2x.webp 2x
+              "
             />
             <source
               media="(min-width: 768px)"
-              srcset="/project-first-race/assets/tab-cabbage-cd67048f.webp 1x, /project-first-race/assets/tab-cabbage@2x-3fabdc08.webp 2x"
+              srcset="
+                ./img/modal/tab-cabbage.webp    1x,
+                ./img/modal/tab-cabbage@2x.webp 2x
+              "
             />
             <source
               media="(max-width: 767px)"
-              srcset="data:image/webp;base64,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 1x, /project-first-race/assets/mob-cabbage@2x-570847d5.webp 2x"
+              srcset="
+                ./img/modal/mob-cabbage.webp    1x,
+                ./img/modal/mob-cabbage@2x.webp 2x
+              "
             />
             <img
               class="modal-list-product-image"
-              src="/project-first-race/assets/desk-cabbage-ae55d107.webp"
+              src="./img/modal/desk-cabbage.webp"
               alt="cabbage basket"
               width="243"
               height="200"
@@ -1153,7 +1162,7 @@
             class="modal-checkbox modal-visually-hidden"
           />
           <svg width="10" height="8">
-            <use href="/project-first-race/assets/icons-04402a93.svg#icon-check"></use>
+            <use href="./img/icons.svg#icon-check"></use>
           </svg>
         </div>
         <div class="modal-list-product">
@@ -1200,26 +1209,35 @@
             class="modal-checkbox modal-visually-hidden"
           />
           <svg width="10" height="8">
-            <use href="/project-first-race/assets/icons-04402a93.svg#icon-check"></use>
+            <use href="./img/icons.svg#icon-check"></use>
           </svg>
         </div>
         <div class="modal-list-product">
           <picture>
             <source
               media="(min-width: 1280px)"
-              srcset="/project-first-race/assets/desk-basket-99167f3e.webp 1x, /project-first-race/assets/desk-basket@2x-bad7666d.webp 2x"
+              srcset="
+                ./img/modal/desk-basket.webp    1x,
+                ./img/modal/desk-basket@2x.webp 2x
+              "
             />
             <source
               media="(min-width: 768px)"
-              srcset="/project-first-race/assets/tab-basket-d8823db4.webp 1x, /project-first-race/assets/tab-basket@2x-73da006d.webp 2x"
+              srcset="
+                ./img/modal/tab-basket.webp    1x,
+                ./img/modal/tab-basket@2x.webp 2x
+              "
             />
             <source
               media="(max-width: 767px)"
-              srcset="data:image/webp;base64,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 1x, /project-first-race/assets/mob-basket@2x-924d56c4.webp 2x"
+              srcset="
+                ./img/modal/mob-basket.webp    1x,
+                ./img/modal/mob-basket@2x.webp 2x
+              "
             />
             <img
               class="modal-list-product-image"
-              src="/project-first-race/assets/desk-basket-99167f3e.webp"
+              src="./img/modal/desk-basket.webp"
               alt="vegetables basket"
               width="243"
               height="200"
@@ -1300,14 +1318,20 @@
       <picture class="modal-person-image">
         <source
           media="(min-width: 1280px)"
-          srcset="/project-first-race/assets/desk-person-8a9e0917.webp 1x, /project-first-race/assets/desk-person@2x-98d8c2bf.webp 2x"
+          srcset="
+            ./img/modal/desk-person.webp    1x,
+            ./img/modal/desk-person@2x.webp 2x
+          "
         />
         <source
           media="(min-width: 768px)"
-          srcset="/project-first-race/assets/tab-person-0a283bde.webp 1x, /project-first-race/assets/tab-person@2x-e09a4a60.webp 2x"
+          srcset="
+            ./img/modal/tab-person.webp    1x,
+            ./img/modal/tab-person@2x.webp 2x
+          "
         />
         <img
-          src="/project-first-race/assets/desk-person-8a9e0917.webp"
+          src="./img/modal/desk-person.webp"
           alt="desk person"
           width="444"
           height="413"
@@ -1315,7 +1339,8 @@
       </picture>
     </div>
   </div>
-  <button class="modal-submit-button" type="submit">Submit</button>
+  <button class="modal-submit-button" type="submit">Submit</button> -->
+  </div>
 </div>
 
 
