@@ -8,20 +8,8 @@
     </button>
     <ul class="modal-list">
       <li>
-        <div class="modal-list-product">
-          <h3 class="modal-list-product-title">Cabbage basket</h3>
-          <p class="modal-list-product-text">Plant</p>
-        </div>
-        <img
-          class="modal-list-product-image"
-          srcset="
-            ./img/modal/mob-cabbage.webp    1x,
-            ./img/modal/mob-cabbage@2x.webp 2x
-          "
-          src="./img/modal/mob-cabbage.webp"
-          alt="Cabbage basket"
-          width-="94"
-        />
+        <h3 class="modal-list-product-title">Cabbage basket</h3>
+        <p class="modal-list-product-text">Plant</p>
         <div>
           <input
             type="checkbox"
@@ -30,49 +18,124 @@
             class="modal-checkbox"
           />
           <svg width="10" height="8">
-            <use href="./img/icons.svg#icon-check"></use>
+            <use href="./img/icons.svg#icon-check is-hidden"></use>
           </svg>
+        </div>
+        <div class="modal-list-product">
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./img/modal/desk-cabbage.webp    1x,
+                ./img/modal/desk-cabbage@2x.webp 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./img/modal/tab-cabbage.webp    1x,
+                ./img/modal/tab-cabbage@2x.webp 2x
+              "
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./img/modal/mob-cabbage.webp    1x,
+                ./img/modal/mob-cabbage@2x.webp 2x
+              "
+            />
+            <img
+              class="modal-list-product-image"
+              src="./img/modal/desk-cabbage.webp"
+              alt="cabbage basket"
+              width="243"
+              height="200"
+            />
+          </picture>
         </div>
       </li>
       <li>
-        <div class="modal-list-product">
-          <h3 class="modal-list-product-title">Tomato basket</h3>
-          <p class="modal-list-product-text">Plant</p>
-        </div>
-        <img
-          class="modal-list-product-image"
-          srcset="
-            ./img/modal/mob-tomatoes.webp,
-            ./img/modal/mob-tomatoes@2x.webp
-          "
-          src="./img/modal/mob-tomatoes.webp"
-          alt="Tomato basket"
-          width-="94"
-        />
+        <h3 class="modal-list-product-title">Tomato basket</h3>
+        <p class="modal-list-product-text">Plant</p>
         <div>
           <input type="checkbox" name="user-check" value="true" />
           <svg width="10" height="8">
-            <use href="./img/icons.svg#icon-check"></use>
+            <use href="./img/icons.svg#icon-check is-hidden"></use>
           </svg>
+        </div>
+        <div class="modal-list-product">
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./img/modal/desk-tomato.webp    1x,
+                ./img/modal/desk-tomato@2x.webp 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./img/modal/tab-tomato.webp    1x,
+                ./img/modal/tab-tomato@2x.webp 2x
+              "
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./img/modal/mob-tomato.webp    1x,
+                ./img/modal/mob-tomato@2x.webp 2x
+              "
+            />
+            <img
+              class="modal-list-product-image"
+              src="./img/modal/desk-tomato.webp"
+              alt="tomato basket"
+              width="243"
+              height="200"
+            />
+          </picture>
         </div>
       </li>
       <li>
+        <h3 class="modal-list-product-title">Vegetables basket</h3>
+        <p class="modal-list-product-text">Plant</p>
+        <div>
+          <input type="checkbox" name="user-check" value="true" />
+          <svg width="10" height="8">
+            <use href="./img/icons.svg#icon-check is-hidden"></use>
+          </svg>
+        </div>
         <div class="modal-list-product">
-          <h3 class="modal-list-product-title">Vegetables basket</h3>
-          <p class="modal-list-product-text">Plant</p>
-          <img
-            class="modal-list-product-image"
-            srcset="./img/modal/mob-basket.webp, ./img/modal/mob-basket@2x.webp"
-            src="./img/modal/mob-basket.webp"
-            alt="Vegetables basket"
-            width-="94"
-          />
-          <div>
-            <input type="checkbox" name="user-check" value="true" />
-            <svg width="10" height="8">
-              <use href="./img/icons.svg#icon-check"></use>
-            </svg>
-          </div>
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./img/modal/desk-basket.webp    1x,
+                ./img/modal/desk-basket@2x.webp 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./img/modal/tab-basket.webp    1x,
+                ./img/modal/tab-basket@2x.webp 2x
+              "
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./img/modal/mob-basket.webp    1x,
+                ./img/modal/mob-basket@2x.webp 2x
+              "
+            />
+            <img
+              class="modal-list-product-image"
+              src="./img/modal/desk-basket.webp"
+              alt="vegetables basket"
+              width="243"
+              height="200"
+            />
+          </picture>
         </div>
       </li>
     </ul>
@@ -91,6 +154,7 @@
           name="user-name"
           id="user-name"
           placeholder="Enter full name..."
+          pattern="[a-zA-Z]"
           required
         />
       </div>
@@ -104,6 +168,7 @@
           name="user-mail"
           id="user-mail"
           placeholder="Enter email..."
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
           required
         />
       </div>
@@ -117,6 +182,8 @@
           name="card-number"
           id="card-number"
           placeholder="Enter card..."
+          pattern="[0-9]"
+          required
         />
       </div>
     </div>
