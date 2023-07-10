@@ -73,8 +73,24 @@
 
 .modal-list {
     list-style-type: none;
+    display:flex;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 40px;
+    flex-direction: column;
 }
 
+@media screen and (min-width: 768px) {
+    .modal-list{
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .modal-list{
+        gap: 20px;
+    }
+}
 
 .modal-checkbox{
     width:16px;
@@ -89,22 +105,49 @@
 }
 
 .modal-list-product {
-    min-width: 295px;
-    height: 119px;
-    border-radius: 20px;
+    width: 295px;
+    background: rgba(252, 138, 17, 1);
+    border-radius: 20px;    
 }
 
 @media screen and (min-width: 768px) {
     .modal-list-product{
-       min-width: 200px;
+       width: 200px;
         height: 250px;
     }
 }
 
 @media screen and (min-width: 1280px) {
     .modal-list-product{
-        min-width: 257px;
+        width: 257px;
         height: 308px;
+    }
+}
+
+ .modal-list-product-title{
+    font-size: 24px;
+    font-style: bold;
+    line-height: 28px;
+    letter-spacing: -4%;
+ }
+
+ @media screen and (min-width: 1280px) {
+    .modal-list-product-title{
+        font-size: 28px;
+    }
+ }
+
+.modal-list-product-text{
+    font-size: 14px;
+    color: #141414;
+    text-align:center;
+    line-height: -2%;
+    margin-top: 2px;
+}
+
+@media screen and (min-width: 1280px) {
+    .modal-list-product-text{
+        margin-top: 8px;
     }
 }
 
