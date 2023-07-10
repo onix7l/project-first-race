@@ -174,7 +174,7 @@
 
 @media screen and (min-width: 768px) {
   .footer-address-list {
-    align-items: left;
+    /* align-items: left; */
     text-align: left;
     justify-content: left;
   }
