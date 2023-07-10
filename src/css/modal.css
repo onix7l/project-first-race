@@ -220,6 +220,15 @@
     /* display: block;
     margin: 0 auto; */
     margin: 0 auto;
+    object-fit: contain;
+  }
+
+  .form-input {
+    width: 360px;
+  }
+
+  .form-textarea {
+    width: 360px;
   }
 
   /* .modal-list {
