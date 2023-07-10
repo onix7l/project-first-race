@@ -1,8 +1,8 @@
-
 @media screen and (min-width: 320px) {
-.order-picture-broccoli{
-display: block;
-padding-right: 0;}
+  .order-picture-broccoli {
+    display: block;
+    padding-right: 0;
+  }
 
   .order-steps-list-item:before {
     content: counter(num);
@@ -21,21 +21,21 @@ padding-right: 0;}
     font-size: 18px;
     border-radius: 200px;
     border: none;
-    letter-spacing: -0.04;
+    letter-spacing: -0.04em;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
   }
-    .order-steps-list-item:first-child::before {
-      top: 5px;
-    }
-.order-steps-list-item:nth-child(2)::before{
-  top: -2px;
-}
-    .order-steps-list-item:last-child::before{
-      top:7px;
-    }
+  .order-steps-list-item:first-child::before {
+    top: 5px;
+  }
+  .order-steps-list-item:nth-child(2)::before {
+    top: -2px;
+  }
+  .order-steps-list-item:last-child::before {
+    top: 7px;
+  }
 
   .order-point {
     width: 5.025px;
@@ -57,10 +57,9 @@ padding-right: 0;}
     font-size: 28px;
     font-weight: 500;
     line-height: 1.14;
-    letter-spacing: -0,04em;
+    letter-spacing: -0.04em;
     text-transform: uppercase;
     padding-bottom: 20px;
-  
   }
 
   .order-photo {
@@ -72,8 +71,6 @@ padding-right: 0;}
     border-radius: 100px;
     background: lightgray 50% / cover no-repeat;
   }
-
-  
 
   .order-list {
     display: flex;
@@ -95,16 +92,15 @@ padding-right: 0;}
     margin-top: 80px;
     background-image: url(../img/order/mob-order-bg.webp);
   }
-    @media (min-device-pixel-ratio: 2),
+  @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
-    (min-resolution:2dppx) {
-      .order-steps-wrapper {
-        background-image: url(../img/order/mob-order-bg@2x.webp);
-      }
+    (min-resolution: 2dppx) {
+    .order-steps-wrapper {
+      background-image: url(../img/order/mob-order-bg@2x.webp);
     }
+  }
 
   .order-point {
-
     width: 5.025px;
     height: 5.025px;
     flex-shrink: 0;
@@ -144,7 +140,6 @@ padding-right: 0;}
     padding-bottom: 21px;
     padding-left: 28px;
     line-height: 1.4;
-
   }
 
   .order-steps-list-item:before {
@@ -164,24 +159,21 @@ padding-right: 0;}
     font-size: 18px;
     border-radius: 200px;
     border: none;
-    letter-spacing: -0.04;
+    letter-spacing: -0.04em;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-
-
   }
-  .order-list-description{
 
-  width: 335px;
-  color: var(--color-black);
-  text-shadow: var(--shadow);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.29;
-  letter-spacing: -0.04em;
-
+  .order-list-description {
+    width: 335px;
+    color: var(--color-black);
+    text-shadow: var(--shadow);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.29;
+    letter-spacing: -0.04em;
   }
 
   .order-content {
@@ -194,12 +186,9 @@ padding-right: 0;}
     width: 176px;
     padding-left: 17px;
   }
-
 }
 
-
 @media screen and (min-width: 375px) {
-
   .order-img {
     width: 335px;
   }
@@ -211,7 +200,6 @@ padding-right: 0;}
   .order-title {
     width: 335px;
   }
-
 }
 
 @media screen and (min-width: 768px) {
@@ -232,13 +220,11 @@ padding-right: 0;}
     font-size: 18px;
     border-radius: 200px;
     border: none;
-    letter-spacing: -0.04;
+    letter-spacing: -0.04em;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-
-
   }
 
   .order-steps-list-item {
@@ -258,8 +244,6 @@ padding-right: 0;}
     display: flex;
     flex-wrap: wrap;
     gap: 40px 8px;
-
-
   }
 
   .order-title {
@@ -278,14 +262,11 @@ padding-right: 0;}
     font-weight: 400;
     line-height: 1.33;
     letter-spacing: -0.04em;
-
-
   }
 
   .order-img {
     width: 310px;
   }
-
 
   .order-list {
     display: flex;
@@ -295,11 +276,11 @@ padding-right: 0;}
   }
 
   .order-list-description {
-      width: 317px;
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 1.33;
-      letter-spacing: -0.04em;
+    width: 317px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.33;
+    letter-spacing: -0.04em;
   }
   .order-steps-wrapper {
     margin-top: 100px;
@@ -309,16 +290,15 @@ padding-right: 0;}
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
-        background-image: url(../img/order/tab-order-bg.webp);
-      
+    background-image: url(../img/order/tab-order-bg.webp);
   }
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution:2dppx) {
-  .order-steps-wrapper {
-    background-image: url(../img/order/tab-order-bg@2x.webp);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .order-steps-wrapper {
+      background-image: url(../img/order/tab-order-bg@2x.webp);
+    }
   }
-}
   .order-subtitle {
     width: 274px;
     color: var(--color-black);
@@ -329,7 +309,6 @@ padding-right: 0;}
     letter-spacing: -0.04em;
     padding-left: 40px;
     padding-right: 0px;
-
   }
 
   .order-steps-list {
@@ -337,7 +316,6 @@ padding-right: 0;}
     margin-top: 0px;
     margin-bottom: 0px;
   }
-
 
   .order-text {
     display: flex;
@@ -353,18 +331,15 @@ padding-right: 0;}
     padding-right: 0px;
     padding-bottom: 2px;
   }
-
 }
 
 @media screen and (min-width: 1280px) {
   .order-steps-list-item {
     padding-bottom: 35px;
     padding-left: 37px;
-
   }
 
   .order-content {
-
     width: 289px;
     font-size: 14px;
     font-weight: 400;
@@ -385,7 +360,6 @@ padding-right: 0;}
 
   .order-container {
     gap: 40px 192px;
-
   }
 
   .order-img {
@@ -396,10 +370,6 @@ padding-right: 0;}
     width: 353px;
     height: 96px;
   }
-
-
-
-
 
   .order-title {
     height: 170px;
@@ -441,14 +411,11 @@ padding-right: 0;}
     background: var(--color-beige);
     background-image: url(../img/order/desk-order-bg.webp);
   }
-    @media (min-device-pixel-ratio: 2),
+  @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
-    (min-resolution:2dppx) {
-      .order-steps-wrapper {
-        background-image: url(../img/order/desk-order-bg@2x.webp);
-      }
+    (min-resolution: 2dppx) {
+    .order-steps-wrapper {
+      background-image: url(../img/order/desk-order-bg@2x.webp);
     }
   }
-
-
-
+}
