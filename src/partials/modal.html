@@ -1,247 +1,298 @@
-<div class="modal-backdrop modal-is-hidden data-modal" id="modal">
+<div class="backdrop data-modal">
+  <!-- <div class="backdrop is-hidden data-modal"> -->
   <div class="modal">
-    <h2 class="modal-title">Your order</h2>
-    <button class="modal-button data-modal-close">
-      <svg width="6" height="6">
+    <button type="button" class="modal-btn data-modal-close">
+      <svg width="24" height="24">
         <use href="./img/icons.svg#icon-close"></use>
       </svg>
     </button>
-    <!-- <ul class="modal-list">
-      <li>
-        <h3 class="modal-list-product-title">Cabbage basket</h3>
-        <p class="modal-list-product-text">Plant</p>
-        <div>
-          <input
-            type="checkbox"
-            name="user-check"
-            value="true"
-            class="modal-checkbox modal-visually-hidden"
+    <p class="modal-title">Your Order</p>
+
+    <ul class="modal-list">
+      <li class="modal-list-item">
+        <div class="modal-item-wrapper">
+          <p class="modal-list-name">Cabbage Basket</p>
+          <p class="modal-list-type">Plant</p>
+        </div>
+        <picture class="modal-list-pic">
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./img/modal/mob-cabbage.webp    1x,
+              ./img/modal/mob-cabbege@2x.webp 2x
+            "
+            type="image/webp"
           />
-          <svg width="10" height="8">
-            <use href="./img/icons.svg#icon-check"></use>
-          </svg>
-        </div>
-        <div class="modal-list-product">
-          <picture>
-            <source
-              media="(min-width: 1280px)"
-              srcset="
-                ./img/modal/desk-cabbage.webp    1x,
-                ./img/modal/desk-cabbage@2x.webp 2x
-              "
-            />
-            <source
-              media="(min-width: 768px)"
-              srcset="
-                ./img/modal/tab-cabbage.webp    1x,
-                ./img/modal/tab-cabbage@2x.webp 2x
-              "
-            />
-            <source
-              media="(max-width: 767px)"
-              srcset="
-                ./img/modal/mob-cabbage.webp    1x,
-                ./img/modal/mob-cabbage@2x.webp 2x
-              "
-            />
-            <img
-              class="modal-list-product-image"
-              src="./img/modal/desk-cabbage.webp"
-              alt="cabbage basket"
-              width="243"
-              height="200"
-            />
-          </picture>
-        </div>
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./img/modal/mob-cabbage.png    1x,
+              ./img/modal/mob-cabbage@2x.png 2x
+            "
+            type="image/png"
+          />
+          <source
+            media="(max-width: 1279px)"
+            srcset="
+              ./img/modal/tab-cabbage.webp    1x,
+              ./img/modal/tab-cabbage@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 1279px)"
+            srcset="
+              ./img/modal/tab-cabbage.png    1x,
+              ./img/modal/tab-cabbage@2x.png 2x
+            "
+            type="image/png"
+          />
+
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./img/modal/desk-cabbage.webp    1x,
+              ./img/modal/desk-cabbage@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./img/modal/desk-cabbage.png    1x,
+              ./img/modal/desk-cabbage@2x.png 2x
+            "
+            type="image/png"
+          />
+          <img
+            src="./img/modal/desk-cabbage.png"
+            alt="cabbage"
+            loading="lazy"
+            width="94"
+            height="78"
+            class="modal-img"
+          />
+        </picture>
+
+        <input
+          type="checkbox"
+          class="modal-list-checkbox visually-hidden"
+          value="true"
+          id="checked"
+          name="checked"
+        />
+        <label for="checkbox" class="checkbox-label"
+          ><span>
+            <svg width="16" height="16" class="checkbox-icon">
+              <use href="./img/icons.svg#icon-check"></use>
+            </svg> </span
+        ></label>
       </li>
-      <li>
-        <h3 class="modal-list-product-title">Tomato basket</h3>
-        <p class="modal-list-product-text">Plant</p>
-        <div>
-          <input
-            type="checkbox"
-            name="user-check"
-            value="true"
-            class="modal-checkbox modal-visually-hidden"
+
+      <li class="modal-list-item">
+        <div class="modal-item-wrapper">
+          <p class="modal-list-name">Tomato Basket</p>
+          <p class="modal-list-type">Plant</p>
+        </div>
+        <picture class="modal-list-pic">
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./img/modal/mob-tomatoes.webp    1x,
+              ./img/modal/mob-tomatoes@2x.webp 2x
+            "
+            type="image/webp"
           />
-          <svg width="10" height="8">
-            <use href="./img/icons.svg#icon-check"></use>
-          </svg>
-        </div>
-        <div class="modal-list-product">
-          <picture>
-            <source
-              media="(min-width: 1280px)"
-              srcset="
-                ./img/modal/desk-tomato.webp    1x,
-                ./img/modal/desk-tomato@2x.webp 2x
-              "
-            />
-            <source
-              media="(min-width: 768px)"
-              srcset="
-                ./img/modal/tab-tomato.webp    1x,
-                ./img/modal/tab-tomato@2x.webp 2x
-              "
-            />
-            <source
-              media="(max-width: 767px)"
-              srcset="
-                ./img/modal/mob-tomato.webp    1x,
-                ./img/modal/mob-tomato@2x.webp 2x
-              "
-            />
-            <img
-              class="modal-list-product-image"
-              src="./img/modal/desk-tomato.webp"
-              alt="tomato basket"
-              width="243"
-              height="200"
-            />
-          </picture>
-        </div>
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./img/modal/mob-tomatoes.png    1x,
+              ./img/modal/mob-tomatoes@2x.png 2x
+            "
+            type="image/png"
+          />
+          <source
+            media="(max-width: 1279px)"
+            srcset="
+              ./img/modal/tab-tomatoes.webp    1x,
+              ./img/modal/tab-tomatoes@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 1279px)"
+            srcset="
+              ./img/modal/tab-tomatoes.png    1x,
+              ./img/modal/tab-tomatoes@2x.png 2x
+            "
+            type="image/png"
+          />
+
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./img/modal/desk-tomatoes.webp    1x,
+              ./img/modal/desk-tomatoes@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./img/modal/desk-tomatoes.png    1x,
+              ./img/modal/desk-tomatoes@2x.png 2x
+            "
+            type="image/png"
+          />
+          <img
+            src="./img/modal/desk-tomatoes.png"
+            alt="tomato"
+            loading="lazy"
+            width="94"
+            height="78"
+            class="modal-img"
+          />
+        </picture>
+        <input
+          type="checkbox"
+          class="modal-list-checkbox visually-hidden"
+          value="true"
+          id="checked"
+          name="checked"
+        />
+        <label for="checkbox" class="checkbox-label"
+          ><span>
+            <svg width="16" height="16" class="checkbox-icon">
+              <use href="./img/icons.svg#icon-check"></use>
+            </svg> </span
+        ></label>
       </li>
-      <li>
-        <h3 class="modal-list-product-title">Vegetables basket</h3>
-        <p class="modal-list-product-text">Plant</p>
-        <div>
-          <input
-            type="checkbox"
-            name="user-check"
-            value="true"
-            class="modal-checkbox modal-visually-hidden"
+
+      <li class="modal-list-item">
+        <div class="modal-item-wrapper">
+          <p class="modal-list-name">Tomato Basket</p>
+          <p class="modal-list-type">Plant</p>
+        </div>
+        <picture class="modal-list-pic">
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./img/modal/mob-basket.webp    1x,
+              ./img/modal/mob-basket@2x.webp 2x
+            "
+            type="image/webp"
           />
-          <svg width="10" height="8">
-            <use href="./img/icons.svg#icon-check"></use>
-          </svg>
-        </div>
-        <div class="modal-list-product">
-          <picture>
-            <source
-              media="(min-width: 1280px)"
-              srcset="
-                ./img/modal/desk-basket.webp    1x,
-                ./img/modal/desk-basket@2x.webp 2x
-              "
-            />
-            <source
-              media="(min-width: 768px)"
-              srcset="
-                ./img/modal/tab-basket.webp    1x,
-                ./img/modal/tab-basket@2x.webp 2x
-              "
-            />
-            <source
-              media="(max-width: 767px)"
-              srcset="
-                ./img/modal/mob-basket.webp    1x,
-                ./img/modal/mob-basket@2x.webp 2x
-              "
-            />
-            <img
-              class="modal-list-product-image"
-              src="./img/modal/desk-basket.webp"
-              alt="vegetables basket"
-              width="243"
-              height="200"
-            />
-          </picture>
-        </div>
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./img/modal/mob-basket.png    1x,
+              ./img/modal/mob-basket@2x.png 2x
+            "
+            type="image/png"
+          />
+          <source
+            media="(max-width: 1279px)"
+            srcset="
+              ./img/modal/tab-basket.webp    1x,
+              ./img/modal/tab-basket@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 1279px)"
+            srcset="
+              ./img/modal/tab-basket.png    1x,
+              ./img/modal/tab-basket@2x.png 2x
+            "
+            type="image/png"
+          />
+
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./img/modal/desk-basket.webp    1x,
+              ./img/modal/desk-basket@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./img/modal/desk-basket.png    1x,
+              ./img/modal/desk-basket@2x.png 2x
+            "
+            type="image/png"
+          />
+          <img
+            src="./img/modal/desk-basket.png"
+            alt="basket"
+            loading="lazy"
+            width="94"
+            height="78"
+            class="modal-img"
+          />
+        </picture>
+
+        <input
+          type="checkbox"
+          class="modal-list-checkbox visually-hidden"
+          value="true"
+          id="checked"
+          name="checked"
+        />
+        <label for="checkbox" class="checkbox-label"
+          ><span>
+            <svg width="16" height="16" class="checkbox-icon">
+              <use href="./img/icons.svg#icon-check"></use>
+            </svg> </span
+        ></label>
       </li>
     </ul>
-    <form
-      class="modal-form"
-      name="feedback_form"
-      autocomplete="off"
-      novalidate
-    ></form>
-    <div class="modal-field">
-      <label for="user-name" class="modal-label modal-visually-hidden"
-        >Name</label
-      >
-      <div class="modal-input-wrap">
-        <input
-          class="modal-input"
-          type="text"
-          name="user-name"
-          id="user-name"
-          placeholder="Enter full name..."
-          pattern="[a-zA-Z]"
-          required
-        />
-      </div>
-    </div>
-    <div class="modal-field">
-      <label for="user-mail" class="modal-label modal-visually-hidden"
-        >Email</label
-      >
-      <div class="modal-input-wrap">
-        <input
-          class="modal-input"
-          type="text"
-          name="user-mail"
-          id="user-mail"
-          placeholder="Enter email..."
-          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-          required
-        />
-      </div>
-    </div>
-    <div class="modal-field">
-      <label for="card-number" class="modal-label modal-visually-hidden"
-        >Card number</label
-      >
-      <div class="modal-input-wrap">
-        <input
-          class="modal-input"
-          type="text"
-          name="card-number"
-          id="card-number"
-          placeholder="Enter card..."
-          pattern="[0-9]"
-          required
-        />
-      </div>
-    </div>
-    <div class="modal-field">
-      <label for="user-comment" class="modal-label modal-visually-hidden"
-        >Comments</label
-      >
-      <div class="modal-input-wrap">
-        <textarea
-          class="modal-textarea"
-          name="user-comment"
-          id="user-comment"
-          placeholder="Enter comments..."
-        >
-        </textarea>
-      </div>
-    </div>
-    <div class="modal-person-image-container">
-      <picture class="modal-person-image">
-        <source
-          media="(min-width: 1280px)"
-          srcset="
-            ./img/modal/desk-person.webp    1x,
-            ./img/modal/desk-person@2x.webp 2x
-          "
-        />
-        <source
-          media="(min-width: 768px)"
-          srcset="
-            ./img/modal/tab-person.webp    1x,
-            ./img/modal/tab-person@2x.webp 2x
-          "
-        />
-        <img
-          src="./img/modal/desk-person.webp"
-          alt="desk person"
-          width="444"
-          height="413"
-        />
-      </picture>
-    </div>
-  </div>
-  <button class="modal-submit-button" type="submit">Submit</button> -->
+
+    <form class="modal-form">
+      <label for="name"></label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter full name..."
+        required
+        pattern="\w{3,16}"
+        class="form-input"
+      />
+
+      <label for="email"></label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter email..."
+        required
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+        class="form-input"
+      />
+
+      <label for="text"></label>
+      <input
+        type="text"
+        id="text"
+        name="text"
+        placeholder="Enter card.."
+        required
+        pattern="\d*"
+        maxlength="16"
+        class="form-input"
+      />
+
+      <label for="comment"></label>
+      <textarea
+        name="comment"
+        id="comment"
+        placeholder="Enter comments..."
+        class="form-textarea"
+      ></textarea>
+
+      <button type="submit" class="form-btn">Submit</button>
+    </form>
   </div>
 </div>
