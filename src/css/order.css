@@ -47,8 +47,8 @@
   .order {
     padding-top: 80px;
     padding-bottom: 80px;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
   }
 
   .order-title {
@@ -123,8 +123,8 @@
     text-transform: uppercase;
     padding-top: 40px;
     padding-bottom: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
+    /* padding-left: 20px;
+    padding-right: 20px; */
   }
 
   .order-steps-list {
@@ -167,7 +167,7 @@
   }
 
   .order-list-description {
-    width: 335px;
+    width: 295px;
     color: var(--color-black);
     text-shadow: var(--shadow);
     font-size: 14px;
@@ -184,6 +184,7 @@
     line-height: 1.23;
     letter-spacing: -0.04em;
     width: 176px;
+
     padding-left: 17px;
   }
 }
