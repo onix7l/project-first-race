@@ -90,7 +90,7 @@
   color: var(--color-141414);
   font-size: 18px;
   font-weight: 700;
-  line-height: var(24 / 18);
+  line-height: calc(24 / 18);
   letter-spacing: -0.04em;
   margin-bottom: 2px;
 }
@@ -174,7 +174,7 @@
   color: var(--color-white);
   font-family: inherit;
   font-size: 14px;
-  line-height: var(18 / 14);
+  line-height: calc(18 / 14);
   letter-spacing: -0.04em;
   text-transform: capitalize;
   background-color: var(--color-orange);
