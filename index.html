@@ -19,8 +19,8 @@
       rel="stylesheet"
     /> -->
     
-    <script type="module" crossorigin src="/project-first-race/assets/index-966568d3.js"></script>
-    <link rel="stylesheet" href="/project-first-race/assets/index-5c56d844.css">
+    <script type="module" crossorigin src="/project-first-race/assets/index-d2f0e580.js"></script>
+    <link rel="stylesheet" href="/project-first-race/assets/index-943a8647.css">
   </head>
   <body>
     <!-- Katerina -->
@@ -933,7 +933,7 @@
           type="tel"
           name="phone"
           placeholder="+380 ()"
-          pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+          pattern="^\+?3?8?(0[\s\.-]\d{2}[\s\.-]\d{3}[\s\.-]\d{2}[\s\.-]\d{2})$"
           minlength="13"
           maxlength="13"
           required
@@ -1308,7 +1308,7 @@
         placeholder="Enter full name..."
         required
         pattern="\w{3,16}"
-        class="form-input"
+        class="modal-form-input"
       />
 
       <label for="email"></label>
@@ -1319,7 +1319,7 @@
         placeholder="Enter email..."
         required
         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-        class="form-input"
+        class="modal-form-input"
       />
 
       <label for="text"></label>
@@ -1331,7 +1331,7 @@
         required
         pattern="\d*"
         maxlength="16"
-        class="form-input"
+        class="modal-form-input"
       />
 
       <label for="comment"></label>
