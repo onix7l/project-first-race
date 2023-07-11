@@ -90,14 +90,20 @@
 }
 
 .contact-img {
-  /* width: 335px; */
+  width: 335px;
+  height: 388px;
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  height: 388px;
 
   background: url(../img/contact/mob-contact-bg.webp), var(--color-beige);
-  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* background: url(../img/contact/mob-contact-bg.webp), var(--color-beige);
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background-position: left top;
   background-size: 335px 388px;
   border-radius: 40px;
 }
@@ -113,6 +119,8 @@
   (min-resolution: 2dppx) {
   .contact-img {
     background: url(../img/contact/mob-contact-bg@2x.webp), var(--color-beige);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
@@ -157,7 +165,16 @@
     width: 704px;
     height: 463px;
     background: url(../img/contact/tab-contact-bg.webp), var(--color-beige);
-    border-radius: 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-image: url(../img/contact/tab-contact-bg.webp);
+    background: var(--color-beige);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 80px; */
+    /* background: url(../img/contact/tab-contact-bg.webp), var(--color-beige);
+    background-repeat: no-repeat;
+    background-size: cover; */
   }
 
   .contact-picture {
@@ -171,6 +188,8 @@
   (min-resolution: 2dppx) {
   .contact-img {
     background: url(../img/contact/tab-contact-bg@2x.webp), var(--color-beige);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
@@ -208,6 +227,8 @@
     width: 525px;
     height: 536px;
     background: url(../img/contact/desk-contact-bg.webp), var(--color-beige);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .contact-picture {
@@ -221,6 +242,8 @@
     .contact-img {
       background: url(../img/contact/desk-contact-bg@2x.webp),
         var(--color-beige);
+      background-repeat: no-repeat;
+      background-size: cover;
     }
   }
 }

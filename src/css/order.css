@@ -308,12 +308,16 @@
     flex-direction: row-reverse;
     justify-content: flex-end;
     background-image: url(../img/order/tab-order-bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .order-steps-wrapper {
       background-image: url(../img/order/tab-order-bg@2x.webp);
+      background-repeat: no-repeat;
+      background-size: cover;
     }
   }
   .order-subtitle {
@@ -434,12 +438,16 @@
     border-radius: 80px;
     background: var(--color-beige);
     background-image: url(../img/order/desk-order-bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .order-steps-wrapper {
       background-image: url(../img/order/desk-order-bg@2x.webp);
+      background-repeat: no-repeat;
+      background-size: cover;
     }
   }
 }
