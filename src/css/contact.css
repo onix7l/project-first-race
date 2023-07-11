@@ -86,6 +86,9 @@
 
 .contact-img {
   /* width: 335px; */
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
   height: 388px;
 
   background: url(../img/contact/AnyConv.com__mob-contact-bg.webp),
@@ -148,11 +151,16 @@
   }
 
   .contact-img {
-    width: 629px;
-    height: 446px;
+    width: 704px;
+    height: 463px;
     background: url(../img/contact/AnyConv.com__tab-contact-bg.webp),
       var(--color-beige);
     border-radius: 80px;
+  }
+
+  .contact-picture {
+    width: 629px;
+    height: 446px;
   }
 }
 
@@ -197,9 +205,14 @@
 
   .contact-img {
     width: 525px;
-    height: 493px;
+    height: 536px;
     background: url(../img/contact/AnyConv.com__desk-contact-bg.webp),
       var(--color-beige);
+  }
+
+  .contact-picture {
+    width: 525px;
+    height: 499px;
   }
 
   @media (min-device-pixel-ratio: 2),
