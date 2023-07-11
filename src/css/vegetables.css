@@ -4,6 +4,10 @@
   |============================
 */
 
+.vegetables {
+  padding-top: 40px;
+}
+
 .vegetables-title {
   color: var(--color-141414);
   text-align: center;

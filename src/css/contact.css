@@ -85,14 +85,20 @@
 }
 
 .contact-img {
-  width: 320px;
-  height: 341px;
+  /* width: 335px; */
+  height: 388px;
 
   background: url(../img/contact/AnyConv.com__mob-contact-bg.webp),
     var(--color-beige);
   background-position: center;
   background-size: cover;
   border-radius: 40px;
+}
+
+.contact-picture {
+  /* width: 335px; */
+
+  /* margin-top: 40px; */
 }
 
 @media (min-device-pixel-ratio: 2),

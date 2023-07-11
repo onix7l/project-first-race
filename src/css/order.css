@@ -52,7 +52,7 @@
 
   .order {
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
     /* margin-left: auto;
     margin-right: auto; */
   }
@@ -69,7 +69,8 @@
   }
 
   .order-photo {
-    padding-left: 25px;
+    /* padding-left: 25px; */
+    margin: 0 auto;
   }
 
   .order-img {
@@ -116,13 +117,13 @@
 
   .order-subtitle {
     display: flex;
-    width: 295px;
+    width: 275px;
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
     color: var(--color-black);
     text-shadow: var(--shadow);
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 1.17;
     letter-spacing: -0.04em;
@@ -197,6 +198,10 @@
 }
 
 @media screen and (min-width: 375px) {
+  .order-subtitle {
+    font-size: 24px;
+  }
+
   .order-img {
     width: 335px;
   }
