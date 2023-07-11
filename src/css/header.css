@@ -80,6 +80,7 @@
     border: none;
     cursor: pointer;
     fill: #141414;
+    margin-right: 15px;
   }
 }
 
@@ -90,5 +91,8 @@
   }
   .header-logo {
     margin-left: 306px;
+  }
+  .header-menu-order {
+    margin-right: 13px;
   }
 }
