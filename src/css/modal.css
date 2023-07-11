@@ -223,12 +223,22 @@
     object-fit: contain;
   }
 
-  .form-input {
+  .modal-form {
     width: 360px;
+  }
+
+  .form-input {
+    width: 100%;
   }
 
   .form-textarea {
     width: 360px;
+  }
+
+  .modal-person-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
   }
 
   /* .modal-list {

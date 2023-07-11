@@ -295,5 +295,59 @@
 
       <button type="submit" class="form-btn">Submit</button>
     </form>
+
+    <picture class="modal-list-pic">
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ./img/modal/mob-person.webp    1x,
+          ./img/modal/mob-person@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <source
+        media="(max-width: 767px)"
+        srcset="./img/modal/mob-person.jpg 1x, ./img/modal/mob-person@2x.jpg 2x"
+        type="image/jpg"
+      />
+      <source
+        media="(max-width: 1279px)"
+        srcset="
+          ./img/modal/tab-person.webp    1x,
+          ./img/modal/tab-person@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <source
+        media="(max-width: 1279px)"
+        srcset="./img/modal/tab-person.jpg 1x, ./img/modal/tab-person@2x.jpg 2x"
+        type="image/jpg"
+      />
+
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          ./img/modal/desk-person.webp    1x,
+          ./img/modal/desk-person@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          ./img/modal/desk-person.jpg    1x,
+          ./img/modal/desk-person@2x.jpg 2x
+        "
+        type="image/jpg"
+      />
+      <img
+        src="./img/modal/desk-person.jpg"
+        alt="basket"
+        loading="lazy"
+        width="266"
+        height="413"
+        class="modal-person-img"
+      />
+    </picture>
   </div>
 </div>
