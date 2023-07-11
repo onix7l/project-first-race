@@ -4,6 +4,8 @@
   justify-content: space-between;
   padding-top: 13px;
   padding-bottom: 13px;
+  /* padding-left: 32px;
+  padding-right: 32px; */
 }
 .header-navigation {
   display: flex;
@@ -20,7 +22,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  fill:#77AC63;
+  fill: #77ac63;
 }
 .header-list {
   display: none;
@@ -52,7 +54,7 @@
   cursor: pointer;
   height: 24px;
   width: 24px;
-  fill: #77AC63;
+  fill: #77ac63;
 }
 .header-menu-order {
   display: none;
@@ -77,7 +79,7 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
-    fill:#141414;
+    fill: #141414;
   }
 }
 
