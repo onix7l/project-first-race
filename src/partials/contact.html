@@ -14,10 +14,8 @@
           class="contact-input"
           type="tel"
           name="phone"
-          placeholder="+380 ()"
-          pattern="^\+?3?8?0\s\d\d\d{7}$"
-          minlength="13"
-          maxlength="13"
+          placeholder=""
+          pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}\[0-9]{3}-[0-9]{2}-[0-9]{2}"
           required
         />
         <button class="contacts-button" type="submit">Recall</button>
@@ -91,3 +89,5 @@
     </div>
   </div>
 </section>
+
+<!-- ^\+[0-9]{3}\s\((\d+)\)-\d{3}-\d{2}-\d{2} -->

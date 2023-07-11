@@ -1,3 +1,12 @@
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  .contact-input {
+    max-width: 260px;
+  }
+
+  .contacts-button {
+  }
+}
+
 .contacts {
   padding: 80px 0 80px 0;
 }
@@ -43,6 +52,7 @@
 
 .contact-input {
   /* color: var(--color-c1bdbd); */
+  width: 308px;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: 0.04em;
@@ -51,12 +61,14 @@
   border-radius: 100px;
   border: 1px solid var(--color-c1bdbd);
   position: relative;
-  padding-right: 105px;
+  /* padding-right: 105px; */
   height: 48px;
   outline-width: 0;
 }
 
 .contacts-button {
+  width: 105px;
+  height: 52px;
   color: var(--color-white);
   font-family: DM Sans;
   font-size: 14px;
@@ -71,7 +83,7 @@
   position: absolute;
   right: 0;
   top: 0;
-  padding: 15px 35px;
+  /* padding: 15px 35px; */
 }
 
 .contact-img {
