@@ -17,20 +17,14 @@
   }
 }
 
-/* @media screen and (min-width: 768px) {
-  .hero-container {
-    margin-left: 17px;
-  }
-} */
-
 @media screen and (min-width: 1280px) {
   .hero-container-wrapper {
     display: flex;
     flex-direction: row;
   }
 }
-.hero-main-list {
 
+.hero-main-list {
 }
 
 .hero-icons-list {
@@ -83,7 +77,6 @@
   z-index: 0;
   position: absolute;
 }
-
 
 .hero-position-two {
   z-index: 1;
@@ -147,7 +140,6 @@
 }
 
 @media screen and (min-width: 768px) {
-
   .hero-item-text {
     font-size: 18px;
     padding-top: 11px;
@@ -232,8 +224,6 @@
   }
 }
 
-
-
 .hero-descr {
   color: var(--color-white);
   text-shadow: var(--shadow);
@@ -243,7 +233,6 @@
   letter-spacing: -0.04em;
   padding-bottom: 20px;
   max-width: 335px;
-
 }
 
 @media screen and (min-width: 320px) and (max-width: 374px) {
@@ -283,7 +272,6 @@
   letter-spacing: -0.04em;
   text-transform: uppercase;
   transform: rotate(-14deg);
-
 }
 
 .hero-btn:hover,
@@ -314,7 +302,6 @@
   display: block;
   margin: 0 auto;
   /* width: 85%; */
-
 }
 
 .hero-image {
@@ -365,35 +352,36 @@
   }
 }
 
-.hero-nav-list {
+/* .hero-nav-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   gap: 4px;
-  margin-left: 161px;
-  align-content: end;
-}
+  max-width: 169px; */
+/* margin-left: 161px; */
+/* align-content: end;
+} */
 
-@media screen and (min-width: 320px) and (max-width: 374px) {
+/* @media screen and (min-width: 320px) and (max-width: 374px) {
   .hero-nav-list {
     margin-left: 120px;
   }
-}
+} */
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .hero-nav-list {
     margin-left: 507px;
     gap: 4px 8px;
   }
-}
+} */
 
-@media screen and (min-width: 1280px) {
+/* @media screen and (min-width: 1280px) {
   .hero-nav-list {
     margin-left: 967px;
     gap: 8px;
   }
-}
+} */
 
 .hero-nav-item {
   border-radius: 1000px;
@@ -410,7 +398,6 @@
 @media screen and (min-width: 1280px) {
   .hero-nav-item {
     padding: 12px 32px;
-    font-style: normal;
   }
 }
 
@@ -436,4 +423,28 @@
 .hero-nav-active {
   color: var(--color-141414);
   background-color: var(--color-white);
+}
+
+.hero-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-nav-list {
+  display: inline-flex;
+  flex-wrap: wrap;
+  max-width: 172px;
+  gap: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-nav-list {
+    max-width: 218px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero-nav-list {
+    max-width: 270px;
+  }
 }
