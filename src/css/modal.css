@@ -10,8 +10,8 @@
 
 .modal {
   position: absolute;
-  width: 335px;
-  min-height: 303px;
+  width: 295px;
+  height: 95%;
   background-color: var(--color-white);
   box-shadow: 0px 0px 8.775463104248047px 0px rgba(0, 0, 0, 0.01),
     0px 0px 18.17037010192871px 0px rgba(0, 0, 0, 0.02),
@@ -24,13 +24,6 @@
   transform: translate(-50%, -50%) scale(1);
   top: 50%;
   padding: 20px;
-}
-
-@media screen and (min-width: 768px) {
-  .modal {
-    width: 704px;
-    padding: 40px;
-  }
 }
 
 .is-hidden {
@@ -76,8 +69,8 @@
 }
 
 .modal-list-item {
-  width: 295px;
-  height: 119px;
+  width: 100%;
+  height: auto;
   background-color: var(--color-fAf3e7);
   margin-bottom: 12px;
   padding: 20px;
@@ -128,12 +121,14 @@
   fill: var(--color-dark-green);
 }
 .modal-form {
+  width: 242px;
+  height: auto;
 }
 
 .form-input {
   border-radius: 100px;
   border: 1px solid rgba(20, 20, 20, 0.3);
-  width: 295px;
+  width: 100%;
   height: 46px;
   margin-bottom: 14px;
   padding-left: 24px;
@@ -149,7 +144,7 @@
 
 .form-textarea {
   resize: none;
-  width: 295px;
+  width: 100%;
   height: 132px;
   border-radius: 20px;
   border: 1px solid rgba(20, 20, 20, 0.3);
@@ -178,10 +173,16 @@
   border: none;
 }
 
+.modal-pic {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .modal {
+    width: 704px;
     padding: 40px;
   }
+
   .modal-btn {
     width: 28px;
     height: 28px;
@@ -202,12 +203,11 @@
 
   .modal-list-item {
     width: 200px;
-    height: 250px;
+    /* height: 250px; */
     /* align-items: center; */
     display: block;
-    padding: 40px 14px 14px 14px;
+    padding: 42px 14px 16px 14px;
     margin-bottom: 0;
-    height: 250px;
   }
 
   .modal-list-type {
@@ -215,12 +215,16 @@
   }
 
   .modal-img {
-    max-width: 172px;
+    width: 172px;
     height: 142px;
     /* display: block;
     margin: 0 auto; */
     margin: 0 auto;
     object-fit: contain;
+  }
+
+  .modal-item-wrapper {
+    margin-bottom: 8px;
   }
 
   .modal-form {
@@ -239,6 +243,41 @@
     position: absolute;
     right: 0;
     bottom: 0;
+  }
+
+  .modal-pic {
+    display: block;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .modal {
+    width: 891px;
+    height: 911px;
+  }
+  .modal-img {
+    width: 243px;
+    height: 200px;
+  }
+
+  .modal-form {
+    width: 360px;
+  }
+
+  .form-textarea {
+    width: 360px;
+  }
+
+  .modal-person-img {
+    width: 444px;
+  }
+
+  .modal-list {
+    gap: 20px;
+  }
+
+  .modal-list-item {
+    width: 257px;
+    /* height: 308px; */
   }
 
   /* .modal-list {
