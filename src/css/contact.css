@@ -42,7 +42,7 @@
 }
 
 .contact-input {
-  color: var(--color-c1bdbd);
+  /* color: var(--color-c1bdbd); */
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: 0.04em;
@@ -53,6 +53,7 @@
   position: relative;
   padding-right: 105px;
   height: 48px;
+  outline-width: 0;
 }
 
 .contacts-button {
@@ -71,22 +72,6 @@
   right: 0;
   top: 0;
   padding: 15px 35px;
-}
-
-.contact-input:hover {
-  border: 1px solid var(--color-dark-green);
-}
-.contact-input:focus {
-  border: 1px solid var(--color-dark-green);
-}
-
-.contacts-button:hover {
-  background-color: var(--color-dark-green);
-  border: 2px solid var(--color-dark-green);
-}
-.contacts-button:focus {
-  background-color: var(--color-dark-green);
-  border: 2px solid var(--color-dark-green);
 }
 
 .contact-img {
@@ -246,4 +231,20 @@
       background-size: cover;
     }
   }
+
+  .contact-input:hover {
+    border: 1px solid var(--color-dark-green);
+  }
+  .contact-input:focus {
+    border: 1px solid var(--color-dark-green);
+  }
+
+  /* .contacts-button:hover {
+    background-color: var(--color-dark-green);
+    border: 2px solid var(--color-dark-green);
+  }
+  .contacts-button:focus {
+    background-color: var(--color-dark-green);
+    border: 2px solid var(--color-dark-green);
+  } */
 }
