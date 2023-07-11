@@ -1306,8 +1306,8 @@
         id="name"
         name="name"
         placeholder="Enter full name..."
+        pattern="[А-Яа-я]*?\s[А-Яа-я]*"
         required
-        pattern="\w{3,16}"
         class="modal-form-input"
       />
 
@@ -1328,9 +1328,8 @@
         id="text"
         name="text"
         placeholder="Enter card.."
+        pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"
         required
-        pattern="\d*"
-        maxlength="16"
         class="modal-form-input"
       />
 
