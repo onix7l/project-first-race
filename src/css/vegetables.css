@@ -106,7 +106,7 @@
   line-height: calc(28 / 24);
   letter-spacing: -0.04em;
   margin-bottom: 8px;
-  margin-left: 24px;
+  padding-left: 24px;
   /* padding-top: 40px;
   padding-left: 20px; */
 }
@@ -130,7 +130,7 @@
   line-height: calc(18 / 14);
   letter-spacing: -0.02em;
   margin-bottom: 40px;
-  margin-left: 24px;
+  padding-left: 24px;
   /* padding-top: 8px;
   padding-left: 20px; */
 }
@@ -166,7 +166,7 @@
   letter-spacing: -0.04em;
   /* padding-bottom: 20px; */
   /* padding-left: 20px; */
-  margin-left: 24px;
+  padding-left: 24px;
   margin-top: 22px;
 }
 @media screen and (min-width: 768px) {
