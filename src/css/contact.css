@@ -31,7 +31,7 @@
   font-weight: 500;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   max-width: 323px;
 }
 
@@ -42,7 +42,7 @@
   line-height: 1.29;
   letter-spacing: 0.04em;
   max-width: 321px;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .contact-form {
@@ -210,13 +210,13 @@
     font-size: 48px;
     line-height: 1.04;
     text-align: start;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
     max-width: 630px;
   }
 
   .contacts-text {
     text-align: start;
-    padding-bottom: 80px;
+    margin-bottom: 80px;
     max-width: 614px;
   }
 
