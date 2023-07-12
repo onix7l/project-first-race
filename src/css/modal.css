@@ -280,7 +280,10 @@
     width: 360px;
   }
 
-  .modal-form-input:hover {
+  .modal-form-input:hover,
+  .modal-form-input:focus,
+  .form-textarea:hover,
+  .form-textarea:focus {
     border-color: var(--color-dark-green);
   }
 
