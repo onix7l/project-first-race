@@ -255,6 +255,24 @@
   }
 }
 
+@keyframes auto-spin {
+  0% {
+    transform: rotate(-14deg);
+  }
+
+  94% {
+    transform: rotate(-14deg);
+  }
+
+  97% {
+    transform: rotate(166deg);
+  }
+
+  100% {
+    transform: rotate(-14deg);
+  }
+}
+
 .hero-btn {
   width: 68px;
   height: 68px;
@@ -262,7 +280,7 @@
   background-color: var(--color-beige);
   border: none;
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   color: var(--color-orange);
   text-align: center;
   text-shadow: var(--shadow);
@@ -272,6 +290,11 @@
   letter-spacing: -0.04em;
   text-transform: uppercase;
   transform: rotate(-14deg);
+
+  animation-name: auto-spin;
+  animation-duration: 7s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
 }
 
 .hero-btn:hover,

@@ -94,6 +94,12 @@
 @media screen and (min-width: 1280px) {
   .vegetable-list-item {
     width: calc((100% - 48px - 144px) / 3);
+    transition: transform 250ms ease, background-color 250ms ease;
+  }
+
+  .vegetable-list-item:hover {
+    background-color: var(--color-dark-green);
+    transform: scale(1.05);
   }
 }
 
