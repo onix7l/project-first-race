@@ -6,6 +6,7 @@
   left: 0;
   background: var(--color-c1bdbd);
   z-index: 999;
+  overflow-y: scroll;
 }
 
 .modal {
@@ -22,8 +23,9 @@
     0px 0px 223px 0px rgba(0, 0, 0, 0.05);
   border-radius: 20px;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  top: 50%;
+  transform: translate(-50%, 0%) rotate(0);
+  /* transform: translate(-50%, -50%) scale(1); */
+  top: 11%;
   padding: 20px;
 }
 
@@ -40,7 +42,7 @@
 }
 
 .backdrop.is-hidden .modal {
-  transform: translate(-50%) scaleY(0);
+  /* transform: translate(-50%) scaleY(0); */
 }
 
 .modal-btn {
@@ -266,6 +268,7 @@
     width: 811px;
     height: 851px;
     padding-bottom: 20px;
+    top: 5%;
   }
   .modal-img {
     width: 243px;
