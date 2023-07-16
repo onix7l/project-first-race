@@ -94,7 +94,7 @@
 @media screen and (min-width: 1280px) {
   .vegetable-list-item {
     width: calc((100% - 48px - 144px) / 3);
-    transition: transform 250ms ease, background-color 250ms ease;
+    transition: transform 500ms ease, background-color 500ms ease;
   }
 
   .vegetable-list-item:hover {
@@ -198,6 +198,7 @@
   margin: 0 auto;
   display: block;
   position: relative;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .vegetables-btn:hover,
 .vegetables-btn:focus {
