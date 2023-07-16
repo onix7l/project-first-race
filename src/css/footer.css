@@ -147,6 +147,8 @@
   .footer-soc-link {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .footer-soc-link:hover,
@@ -164,6 +166,13 @@
   font-weight: 400;
   line-height: calc(18 / 14);
   text-transform: uppercase;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1280px) {
+  .footer-tel-link:focus,
+  .footer-tel-link:hover {
+    color: var(--color-dark-green);
+  }
 }
 
 .footer-address-list {
@@ -188,4 +197,12 @@
   font-weight: 400;
   line-height: calc(18 / 14);
   letter-spacing: -0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1280px) {
+  .footer-address-link:focus,
+  .footer-address-link:hover {
+    color: var(--color-dark-green);
+  }
 }
